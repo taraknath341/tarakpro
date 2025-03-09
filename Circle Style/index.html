@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Circle Style</title>
+    <style>
+      body {
+        background-color:rgb(0, 0, 0);
+      }
+      #flower1 {
+        height:20pc;
+        width:20pc;
+        background-color: rgb(0, 0, 0);
+      }
+      #flower2 {
+        background-color:rgb(255, 208, 0);
+        height:5pc;
+        width:5pc;
+      }
+      #flower3 {
+        background-color:rgb(21, 255, 0);
+        height:5pc;
+        width:5pc;
+      }
+    </style>
+  </head>
+  <body>
+    <br><br><br>
+    <center>
+      <div id="flower1">
+        <div id="flower2"></div>
+        <br><br><br><br>
+        <br><br><br><br>
+        <div id="flower3"></div>
+      </div>
+    </center>
+    <br><br><br><br>
+    <button onclick="aboutBtn()">|||</button>
+    <pre id="about">
+    Company- Tarak Program.
+    Coder Name- Taraknath Karan.
+    </pre>
+    <script>
+      "use strict";
+      // Round Style
+      let style = document.createElement("style");
+      document.body.appendChild(style);
+      let countA = 0;
+      function autoRun() {
+        countA += 2;
+        style.innerHTML = `
+          #flower1, #flower2,#flower3 {
+            rotate:${countA}deg;
+          }
+        `;
+        if (countA > 99999) {
+          countA = 0;
+        }
+      }
+      setInterval(autoRun, 0);
+      // about Button
+      let countB = 0;
+      let about = document.querySelector("#about");
+      function aboutBtn() {
+        switch (countB) {
+          case 0:
+            about.style.color = "black";
+            countB++;
+            break;
+          case 1:
+            about.style.color = "white";
+            countB--;
+        }
+      }
+      aboutBtn();
+    </script>
+  </body>
+</html>
