@@ -1,0 +1,77 @@
+body {
+  transition: 0.5s;
+  background-color: black;
+  color: #fff;
+  font-family:Ubuntu;
+}
+.companyName {
+  transition: 0.5s;
+  font-size: 1.3pc;
+  font-family:Ubuntu;
+}
+.gameName {
+  transition: 0.5s;
+  font-size: 3pc;
+  font-family:Ubuntu;
+}
+.play {
+  transition: 0.5s;
+  height: 5pc;
+  width: 8pc;
+  font-size: 3pc;
+  border-radius: 0.5;
+  border-style: none;
+  font-family:Ubuntu;
+}
+.play:hover {
+  transform:rotate(30deg);
+}
+.choice {
+  transition: 0.5s;
+  height: 7pc;
+  width: 7pc;
+  font-size: 2pc;
+  border-radius: 2pc;
+  border-style: none;
+  font-family:Ubuntu;
+}
+.choice:hover {
+  transform: rotatex(50deg);
+}
+.hidden {
+  color: #00000000;
+}
+.aaaa {
+  height: 7pc;
+  width: 8pc;
+  background-color: rgb(48, 36, 12);
+  color:#ffffffea; 
+  border-radius: 1pc;
+  border-style: none;
+  font-family:Ubuntu;
+
+}
+.aabb {
+  height: 2pc;
+  width: 8pc;
+  font-family:Ubuntu;
+  font-size: 1.3pc;
+}
+#game-body {
+  font-family:Ubuntu;
+  width: 90%;
+}
+.zoom-btn {
+  background-color: black;
+  color: white;
+  font-family:Ubuntu;
+  height: 3pc;
+  width: 9pc;
+  border-color: #fff;
+  border-style: groove;
+  font-size: 1.5pc;
+}
+.score {
+  font-family:Ubuntu;
+  font-size: 1.5pc;
+}
