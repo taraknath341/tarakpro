@@ -1,0 +1,24 @@
+:root {
+  --heightAndWidth: 19pc;
+}
+body {
+  background-color: black;
+  color: white;
+}
+#main {
+  background-color:#8d000000;
+  height: var(--heightAndWidth);
+  width: var(--heightAndWidth);
+  border-radius: 33pc;
+  transition: 2s;
+}
+.fire-circle {
+  height:3pc;
+  width:3pc;
+  background-color: yellow;
+  border-radius: 3pc;
+  border-style: none;
+}
+.hidden {
+  color:#0000ff00
+}
